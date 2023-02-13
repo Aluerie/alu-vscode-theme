@@ -1,0 +1,184 @@
+$schema: vscode://schemas/color-theme
+name: Alu Dark - PyCharm High Contrast
+author: Aluerie
+maintainers:
+  - Aluerie
+semanticHighlighting: true
+
+alu:
+  base:
+    - &BLACK      '#000000'
+    - &CYAN       '#4FF0FF'
+    - &VIOLET     '#281A33'
+    - &YELLOW     '#D2F53C'
+
+# User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
+colors:
+  activityBar.background: *BLACK              # Activity Bar background color
+
+  editor.background: *BLACK                         
+  editor.lineHighlightBackground: "#000066"
+  editor.selectionBackground: "#0f6780"
+
+  editorWidget.background: *VIOLET
+
+  # Explorer Colors
+  # gitDecoration.modifiedResourceForeground: *CYAN
+
+  menu.background: *BLACK
+
+  sideBar.background: *BLACK
+
+  titleBar.activeBackground: *BLACK
+
+  panel.background: *BLACK
+
+  quickInput.background: *VIOLET
+
+  textLink.foreground: *YELLOW
+  textLink.activeForeground: *YELLOW
+
+# Syntaxes
+tokenColors:
+
+# =============================================================================
+# General
+# =============================================================================
+  - name: BuiltIn functions
+    scope: 
+    - support.function.builtin
+    settings: 
+      foreground: "#8888C6"
+
+  - name: Colon
+    scope: 
+    - punctuation.separator.colon
+    - punctuation.section
+    - punctuation.separator.annotation
+    - punctuation.separator.dict
+    settings: 
+      foreground: "#AA22FF"
+      fontStyle: bold
+
+  - name: Commas
+    scope: 
+    - punctuation.separator
+    settings: 
+      foreground: "#FFDD00"
+      fontStyle: bold
+
+  - name: Comments 
+    scope: 
+    - comment
+    settings: 
+      foreground: "#408080"
+
+  - name: Decorators 
+    scope: 
+    - entity.name.function.decorator
+    - punctuation.definition.decorator
+    - meta.function.decorator
+    settings: 
+      foreground: "#AA22FF"
+
+  - name: Doc Strings
+    scope:
+    - string.quoted.docstring.multi.python
+    - constant.character.escape.python
+    settings:
+      foreground: "#408080"
+      fontStyle: italic
+
+  - name: Dots
+    scope: 
+    - punctuation.separator.period
+    settings:
+      foreground: "#FFFFFF"
+
+  - name: Function calls
+    scope: 
+    - entity.name.function.member
+    - meta.function-call.generic
+    - meta.function-call
+    - support.constant.handlebars
+    - source.powershell variable.other.member
+    - entity.name.operator.custom-literal
+    - meta.member.access
+    settings: 
+      foreground: "#0288D1"
+
+  - name: Keywords
+    scope: 
+    - storage.type
+    - keyword.operator.logical.python
+    - keyword.control
+    - constant.language
+    settings: 
+      foreground: "#4CAF50"
+
+  - name: Magic Functions
+    scope: 
+    - support.function.magic
+    settings: 
+      foreground: "#B200B2"
+
+  - name: Numbers
+    scope:
+    - constant.numeric
+    settings: 
+      foreground: '#66BB6A'
+      fontStyle: bold
+
+  - name: Parameters
+    scope: 
+    - variable.parameter
+    settings:
+      foreground: "#B6437E"
+
+
+  - name: Self and Cls
+    scope:
+    - variable.parameter.function.language.special.self
+    - variable.parameter.function.language.special.cls
+    settings:
+      foreground: "#94558D"
+
+  - name: Sign Operators
+    scope: 
+    - keyword.operator
+    settings: 
+      foreground: "#AA22FF"
+
+  - name: Strings
+    scope: 
+    - string
+    settings: 
+      foreground: "#A5C261"
+
+  - name: Variable and parameter name
+    scope: 
+    - variable
+    - meta.attribute
+    - meta.member.access
+    - variable.other.constant
+    - meta.definition.variable.name
+    - support.variable
+    - entity.name.variable
+    - constant.other.placeholder
+    settings:
+      foreground: "#ebebeb"
+
+
+
+semanticTokenColors:
+  "*.async": "#894ad1e7"
+  "*.typeHint:python": "#6e1dc0"
+  "*.typeHintComment:python": "#aaaaaa"
+  "*.decorator": "#AA22FF"
+  "function.declaration:python": "#9C1114"
+  "method.declaration:python": "#9C1114"
+  "property.declaration:python": "#DCDCAA"
+  "magicFunction.declaration:python": "#B200B2"
+  "*.builtin": "#8888C6"
+  "*.static": "#3c89a8"
+  "builtinConstant": "#4CAF50"
