@@ -3,7 +3,7 @@
   "publisher": "Aluerie",
   "displayName": "Alu Dark - PyCharm High Contrast ",
   "description": "Alu Dark PyCharm High Contrast theme for VSCode",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -19,8 +19,8 @@
       }
     ]
   },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/aluerie/alu-vscode-theme"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aluerie/alu-vscode-theme"
+  }
 }
