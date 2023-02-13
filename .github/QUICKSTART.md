@@ -37,3 +37,14 @@ To learn more about scopes and how they're used, check out the [color theme](htt
 ## Changelog
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure `CHANGELOG.md` file.
+
+## Publish and Increment version 
+
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+
+in a nutshell 
+
+```bash
+vsce package
+vsce publish patch/minor/major
+```
